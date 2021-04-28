@@ -10,7 +10,7 @@ import { useQuery, useMutation } from '@apollo/react-hooks';
 
 
 const SavedBooks = () => {
-  const [removeBook, { error }] = useMutation(REMOVE_BOOK);
+  const [removeBook] = useMutation(REMOVE_BOOK);
   const [userData, setUserData] = useState({});
 
   // use this to determine if `useEffect()` hook needs to run again
